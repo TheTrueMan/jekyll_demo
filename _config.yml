@@ -1,8 +1,28 @@
-title: You Blog    				  	#你博客的标题
-SEOTitle: 你的博客 | You Blog    	 #显示在浏览器上搜索的时候显示的标题
-header-img:   	#显示在首页的背景图片
-email: 	
-description: "You Blog"  			 #网站介绍
-keyword: "BY, BY Blog," #关键词
-url: "https://thetrueman.github.io"          # 这个就是填写你的博客地址
-baseurl: "https://thetrueman.github.io"      # 这个我们不用填写
+# Site settings
+title: 博客
+email: 
+description: > # this means to ignore newlines until "baseurl:"
+  博客
+baseurl: "" # the subpath of your site, e.g. /blog/
+url: https://thetrueman.github.io # the base hostname & protocol for your site
+
+# Sidebar filter
+# Choose 'tag' or 'category' as filter in sidebar.
+filter: 'category'
+recent_num: 20
+
+
+# Build settings
+permalink: /:year/:month/:day/:title.html
+markdown: kramdown
+highlighter: rouge
+mathjax: disabled
+sass:
+  style: compressed
+
+# Jekyll Plugin
+# https://help.github.com/articles/adding-jekyll-plugins-to-a-github-pages-site/
+gems:
+  - jekyll-sitemap
+  - jekyll-seo-tag
+  - jekyll-feed
